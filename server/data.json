@@ -1,0 +1,67 @@
+[{
+    "productId": 1,
+    "productName": "Leaf Rake",
+    "productCode": "GDN-0011",
+    "releaseDate": "March 19,2009",
+    "description": "Leaf rake with 48-inch handle.",
+    "cost":4.00,
+    "price": 4.95,
+    "category": "garden",
+    "tags": ["leaf", "tool"],
+    "imageUrl": "images/leafrake.jpg",
+    "margin":50
+
+},
+{
+    "productId": 2,
+    "productName": "Hammer",
+    "productCode": "GDN-0012",
+    "releaseDate": "March 19,2010",
+    "description": "Hammer.",
+    "cost": 7.00,
+    "price": 10.00,
+    "category": "tool",
+    "tags": ["tool"],
+    "imageUrl": "../images/hammer.jpg",
+    "margin":90
+}, {
+    "productId": 3,
+    "productName": "Knife",
+    "productCode": "GDN-0015",
+    "releaseDate": "March 19,2015",
+    "description": "Knife.",
+    "cost": 7.00,
+    "price": 59.00,
+    "category": "tool",
+    "tags": ["tool"],
+    "imageUrl": "../images/knife.jpg",
+    "margin":45
+}
+    ,
+{
+    "productId": 4,
+    "productName": "Fork",
+    "productCode": "GDN-0012",
+    "releaseDate": "March 19,2010",
+    "description": "Fork.",
+    "cost": 9.00,
+    "price": 56.00,
+    "category": "tool",
+    "tags": ["tool"],
+    "imageUrl": "../images/fork.jpg",
+    "margin":15
+},
+{
+    "productId": 5,
+    "productName": "Spoon",
+    "productCode": "GDN-0012",
+    "releaseDate": "March 19,2010",
+    "description": "Hammer.",
+    "cost": 5.00,
+    "price": 35.00,
+    "category": "Tool",
+    "tags": ["tool"],
+    "imageUrl": "../images/spoon.jpg",
+    "margin":34
+
+}]

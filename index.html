@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Products Management Website</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+</head>
+
+<body class="content" ng-app="productManagement">
+
+    <div class="content .d-block" id="bootstrap-overides">
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <a class="navbar-brand" ui-sref="super.home">Products Management Website</a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" ng-click="viewMenu(viewMenuFlag)" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="list-container-menu hide-xs hide-sm">
+                    <div class="links">
+                    <a href="#" ui-sref="super.productEdit.info({productId:0})"id="linkitems" class="alert alert-success">Add Product</a>
+                    <a href="#" ui-sref="super.productList" id="linkitems" class="alert alert-success">Product List</a>
+                    <a href="#" ui-sref="super.priceAnalytics" id="linkitems" class="alert alert-success">Price Analytics</a>
+                </div>
+                </div>
+                <section class="side-section" ng-class="{'show-menu':viewMenuFlag}">
+                    <ul class="header-elements">
+                        <li id="add-product">
+                            <a ui-sref="super.productEdit.info({productId:0})">
+                                <i  id="icon"class="glyphicon glyphicon-plus"></i>
+                                Add Product</a>
+                        </li>
+                        <li id="product-list">
+                            <a ui-sref="super.productList">Product List</a>
+                        </li>
+                        <li id="price-analytics"> 
+                            <a ui-sref="super.priceAnalytics">
+                                Price Analytics</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </nav>
+        <div class="ui-view-style" ui-view></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+    <script src="common/services/common.services.js"></script>
+    <script src="common/services/getProductsService.js"></script>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/toaster.css">
+    <script src="js/ui-bootstrap.js"></script>
+    <script src="app/products/productListCtrl.js"></script>
+    <script src="app/products/productDetailCtrl.js"></script>
+    <script src="app/products/productEditCtrl.js"></script>
+    <script src="app/prices/priceAnalyticsCtrl.js"></script>
+
+    <script src="js/angular-ui.router.js"></script>
+    <script src="js/ui-utils.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+
+    <script src="js/angular-resource.js"></script>
+    <script src="js/angular-mocks.js"></script>
+    <script src="js/toaster.js"></script>
+    <script src="js/angular-charts.js"></script>
+    <script src="js/d3.js"></script>
+
+
+
+
+</body>
+
+</html>
